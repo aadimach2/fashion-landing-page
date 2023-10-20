@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+
+
+
+.main{
+    /* border:2px solid red; */
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+.main>img{
+    /* height:60vh; */
+    height:600px;
+    width:500px;
+    position:relative;
+    z-index:22;
+    object-fit:cover;
+}
+.textt{font-size:30px;
+    position:absolute;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   
+    
+     */
+    width:60%;
+    z-index:1000;
+    text-align:center;
+    top:17%;
+    font-weight:900;
+    color:rgb(0, 0, 0);
+
+}
+.scroll{
+    position:absolute;
+    top:25%;
+    width:100%;
+    height:100px;
+    white-space: nowrap;
+    overflow-x:auto;
+    overflow-y:hidden;  
+    /* border:2px solid green; */
+}
+.scroll::-webkit-scrollbar{
+    display:none;
+}
+.scroll>h1{
+    display:inline-block;
+    font-size:110px;
+    text-transform:uppercase;
+    margin-right:30px;
+    letter-spacing:5px;
+    animation-name:one;
+    animation-duration:1.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    
+}
+  
+
+
+.scroll2{
+    position:absolute;
+    top:45%;
+    width:100%;
+    height:110px;
+    white-space: nowrap;
+     overflow-x:auto;
+    overflow-y:hidden; 
+    /* border:2px solid red; */
+    z-index:44;
+}
+.scroll2::-webkit-scrollbar{
+    display:none;
+}
+.scroll2>h1{
+    display:inline-block;
+    font-size:120px;
+    text-transform:uppercase;
+    margin-right:30px;
+    letter-spacing:5px;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color:black;
+    color:white;
+    animation-name:one;
+    animation-duration:1s;    
+    animation-iteration-count:infinite;
+    animation-timing-function:  linear;
+
+  
+
+}
+.scroll3{
+    position:absolute;
+    top:65%;
+    width:100%;
+    height:110px;
+    white-space: nowrap;
+     overflow-x:auto;
+    overflow-y:hidden; 
+    /* border:2px solid tan; */
+}
+.scroll3::-webkit-scrollbar{
+    display:none;
+}
+.scroll3>h1{
+    display:inline-block;
+    font-size:120px;
+    text-transform:uppercase;
+    margin-right:30px;
+    letter-spacing:5px;
+    animation-name:one;
+    animation-duration: 1.3s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+
+    animation-direction:reverse;
+  
+
+} 
+@keyframes one{
+
+
+
+    0%{
+        transform:translateX(calc(-100%  - 30px));
+    }
+
+     100%{
+       /* transform:translateX(0); */
+      
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+}
